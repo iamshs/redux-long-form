@@ -12,7 +12,7 @@ const Home = () => {
     const state = useSelector((state) => state)
 console.log(state)
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 p-10' >
+        <div className='grid grid-cols-1 lg:grid-cols-4 gap-10 p-10' >
            {
             products.map(product => <ProductCard product={product} key={product._id} />)
            }
